@@ -22,5 +22,9 @@ public class reSpawn : MonoBehaviour
         {
             transform.position = spawn;
         }
+        else if (col.gameObject.tag == "Pinche")
+        {
+            transform.position = spawn;
+        }
     }
 }
