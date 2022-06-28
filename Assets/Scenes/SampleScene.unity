@@ -2679,7 +2679,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -7212,6 +7212,11 @@ PrefabInstance:
       propertyPath: MinDistance
       value: 1.0357456
       objectReference: {fileID: 0}
+    - target: {fileID: 3849608716391527740, guid: c12d0b17146c8f54e8185c090f0e394a,
+        type: 3}
+      propertyPath: m_Radius
+      value: 1.48
+      objectReference: {fileID: 0}
     - target: {fileID: 3849608716621528391, guid: c12d0b17146c8f54e8185c090f0e394a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7606,7 +7611,7 @@ PrefabInstance:
     - target: {fileID: 6470187355155893690, guid: 485c85d945a0c3a4695c1ea7a25516f4,
         type: 3}
       propertyPath: m_Size.y
-      value: 1.8
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6470187355155893690, guid: 485c85d945a0c3a4695c1ea7a25516f4,
         type: 3}

@@ -20,8 +20,8 @@ public class RecollecionMonedas : MonoBehaviour
     {
         if (other.tag == "Player")
         {
+            Destroy(gameObject, 0.5f);
             audio.Play();
-            Destroy(gameObject,0.5f);
         }
     }
 }
