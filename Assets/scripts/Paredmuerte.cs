@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RecollecionMonedas : MonoBehaviour
+public class Paredmuerte : MonoBehaviour
 {
-    AudioSource audio;
+
+    public GameObject cubo;
     // Start is called before the first frame update
     void Start()
     {
-        audio = GetComponent<AudioSource>();
+        
     }
 
     // Update is called once per frame
@@ -16,12 +17,13 @@ public class RecollecionMonedas : MonoBehaviour
     {
         
     }
-    private void OnTriggerEnter (Collider other)
+    void OnCollisionEnter(Collision col)
     {
-        if (other.tag == "Player")
+        //Debug.Log("jhrbf");
+
+        if (col.gameObject.tag == "Player")
         {
-            audio.Play();
-            Destroy(gameObject,0.5f);
+            Destroy(cubo);
         }
     }
 }

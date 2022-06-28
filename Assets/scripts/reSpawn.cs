@@ -26,5 +26,9 @@ public class reSpawn : MonoBehaviour
         {
             transform.position = spawn;
         }
+        else if (col.gameObject.tag == "Paredes")
+        {
+            transform.position = spawn;
+        }
     }
 }
